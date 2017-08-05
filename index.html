@@ -117,46 +117,6 @@
 
 
         
-            <div id="switch-btn" class="switch-btn">
-                <div class="icon">
-                    <div class="icon-ctn">
-                        <div class="icon-wrap icon-house" data-idx="0">
-                            <div class="birdhouse"></div>
-                            <div class="birdhouse_holes"></div>
-                        </div>
-                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
-                            <div class="ribbon"></div>
-                        </div>
-                        
-                        <div class="icon-wrap icon-link hide" data-idx="2">
-                            <div class="loopback_l"></div>
-                            <div class="loopback_r"></div>
-                        </div>
-                        
-                        
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
-                    </div>
-                    
-                </div>
-                <div class="tips-box hide">
-                    <div class="tips-arrow"></div>
-                    <ul class="tips-inner">
-                        <li>菜单</li>
-                        <li>标签</li>
-                        
-                        <li>友情链接</li>
-                        
-                        
-                        <li>关于我</li>
-                        
-                    </ul>
-                </div>
-            </div>
-        
 
         <div id="switch-area" class="switch-area">
             <div class="switch-wrap">
@@ -187,12 +147,6 @@
                     </nav>
                 </section>
                 
-                
-                <section class="switch-part switch-part2">
-                    <div class="widget tagcloud" id="js-tagcloud">
-                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li></ul>
-                    </div>
-                </section>
                 
                 
                 
@@ -294,8 +248,82 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><excerpt in="" index="" |="" java=""><br>
-          
+        <p><excerpt in="" index="" |="" java=""><br><!-- ？？？？ --></excerpt></p>
+<p><the rest="" of="" contents="" |="" 余下全文=""></the></p>
+<h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">-2147483648~2147483647</td>
+</tr>
+<tr>
+<td>short</td>
+<td style="text-align:center">2字节</td>
+<td style="text-align:left">-32768~32767</td>
+</tr>
+<tr>
+<td>long</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">-9 223 372 036 854 775 808~-9 223 372 036 854 775 807</td>
+</tr>
+<tr>
+<td>byte</td>
+<td style="text-align:center">1字节</td>
+<td style="text-align:left">-128~127</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">大约±3.402 823 47E+38F(有效位数6~7位)</td>
+</tr>
+<tr>
+<td>double</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">大约±1.797 693 134 862 315 70E+308(有效位数15位)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h2><blockquote>
+<p>单个字符，通常用来表示字符常量</p>
+</blockquote>
+<hr>
+<h3 id="特殊的转义字符"><a href="#特殊的转义字符" class="headerlink" title="特殊的转义字符"></a>特殊的转义字符</h3><blockquote>
+<p><strong>\b 退格</strong>  <strong>\n 换行</strong><br><strong>\t 制表</strong>   <strong>\r 回车</strong></p>
+</blockquote>
+<hr>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><ul>
+<li>利用关键字<code>final</code>指示常量。</li>
+<li>关键字final表示这个这个变量只能被赋值一次。一旦被赋值以后就不能再更改。</li>
+<li>常量名使用全大写。</li>
+<li>要想某个常量在一个类中的多个方法中使用，通常将这些常量称为类常量，可以用<code>static final</code>设置一个常量值。</li>
+<li>类常量的定义位于<code>main</code>方法的外部，而且如果一个常量被声明为<code>public</code>，那么其他类的方法也可以使用这个常量</li>
+</ul>
+<hr>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="三目运算符"><a href="#三目运算符" class="headerlink" title="三目运算符"></a>三目运算符</h3><blockquote>
+<p>condition？expression1：expression2<br>当条件condition为真时计算第一个表达式，否则计算第二个表达式。</p>
+</blockquote>
+
       
     </div>
     
@@ -312,10 +340,6 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
     </div>
 
-      
-        <p class="article-more-link">
-          <a href="/2017/08/05/java数据类型/#more">阅读全文 >></a>
-        </p>
       
       <div class="clearfix"></div>
     </div>
