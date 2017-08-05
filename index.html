@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-Hans">
 <head>
 
     <!--[if lt IE 9]>
@@ -11,7 +11,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="format-detection" content="telephone=no" />
-<meta name="author" content="quan Lee" />
+<meta name="author" content="Quan Lee" />
 
 
     
@@ -24,7 +24,7 @@
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="Small Cabin">
 <meta property="og:description" content="一粒沙里看世界,半瓣花上说人情">
-<meta property="og:locale" content="zh-CN">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Small Cabin">
 <meta name="twitter:description" content="一粒沙里看世界,半瓣花上说人情">
@@ -82,7 +82,9 @@
 </script>
 
 
-    <script> yiliaConfig.jquery_ui = [false]; </script>
+    <script>
+        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
+    </script>
 
 
 
@@ -104,7 +106,7 @@
             <img src="‪/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
-          <h1 class="header-author"><a href="/">quan Lee</a></h1>
+          <h1 class="header-author"><a href="/">Quan Lee</a></h1>
         </hgroup>
 
         
@@ -175,7 +177,7 @@
                     <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" href="/qlee1122@qq.com" title="Email"></a>
+                                <a class="fa Email" href="mailto:qlee1122@qq.com" title="Email"></a>
                             
                                 <a class="fa 新浪微博" href="http://weibo.com/papapiapia" title="新浪微博"></a>
                             
@@ -219,7 +221,7 @@
       <nav id="mobile-nav">
       <div class="overlay">
           <div class="slider-trigger"></div>
-          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">quan Lee</a></h1>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">Quan Lee</a></h1>
       </div>
     <div class="intrude-less">
         <header id="header" class="inner">
@@ -227,7 +229,7 @@
                 <img src="‪/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
-              <h1 class="header-author"><a href="/" title="回到主页">quan Lee</a></h1>
+              <h1 class="header-author"><a href="/" title="回到主页">Quan Lee</a></h1>
             </hgroup>
             
             <p class="header-subtitle">永不知足，我行我素</p>
@@ -249,7 +251,7 @@
             <nav class="header-nav">
                         <ul class="social">
                             
-                                <a class="fa Email" target="_blank" href="/qlee1122@qq.com" title="Email"></a>
+                                <a class="fa Email" target="_blank" href="mailto:qlee1122@qq.com" title="Email"></a>
                             
                                 <a class="fa 新浪微博" target="_blank" href="http://weibo.com/papapiapia" title="新浪微博"></a>
                             
@@ -292,81 +294,8 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th style="text-align:center">存储需求</th>
-<th style="text-align:left">取值范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>int</td>
-<td style="text-align:center">4字节</td>
-<td style="text-align:left">-2147483648~2147483647</td>
-</tr>
-<tr>
-<td>short</td>
-<td style="text-align:center">2字节</td>
-<td style="text-align:left">-32768~32767</td>
-</tr>
-<tr>
-<td>long</td>
-<td style="text-align:center">8字节</td>
-<td style="text-align:left">-9 223 372 036 854 775 808~-9 223 372 036 854 775 807</td>
-</tr>
-<tr>
-<td>byte</td>
-<td style="text-align:center">1字节</td>
-<td style="text-align:left">-128~127</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h2><table>
-<thead>
-<tr>
-<th>类型</th>
-<th style="text-align:center">存储需求</th>
-<th style="text-align:left">取值范围</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>float</td>
-<td style="text-align:center">4字节</td>
-<td style="text-align:left">大约±3.402 823 47E+38F(有效位数6~7位)</td>
-</tr>
-<tr>
-<td>double</td>
-<td style="text-align:center">8字节</td>
-<td style="text-align:left">大约±1.797 693 134 862 315 70E+308(有效位数15位)</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h2 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h2><blockquote>
-<p>单个字符，通常用来表示字符常量</p>
-</blockquote>
-<hr>
-<h3 id="特殊的转义字符"><a href="#特殊的转义字符" class="headerlink" title="特殊的转义字符"></a>特殊的转义字符</h3><blockquote>
-<p><strong>\b 退格</strong>  <strong>\n 换行</strong><br><strong>\t 制表</strong>   <strong>\r 回车</strong></p>
-</blockquote>
-<hr>
-<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><ul>
-<li>利用关键字<code>final</code>指示常量。</li>
-<li>关键字final表示这个这个变量只能被赋值一次。一旦被赋值以后就不能再更改。</li>
-<li>常量名使用全大写。</li>
-<li>要想某个常量在一个类中的多个方法中使用，通常将这些常量称为类常量，可以用<code>static final</code>设置一个常量值。</li>
-<li>类常量的定义位于<code>main</code>方法的外部，而且如果一个常量被声明为<code>public</code>，那么其他类的方法也可以使用这个常量</li>
-</ul>
-<hr>
-<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p>##三目运算符</p>
-<blockquote>
-<p>condition？expression1：expression2<br>当条件condition为真时计算第一个表达式，否则计算第二个表达式。</p>
-</blockquote>
-
+              <p><excerpt in="" index="" |="" java=""><br>
+          
       
     </div>
     
@@ -383,6 +312,10 @@
         <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
     </div>
 
+      
+        <p class="article-more-link">
+          <a href="/2017/08/05/java数据类型/#more">阅读全文 >></a>
+        </p>
       
       <div class="clearfix"></div>
     </div>
@@ -471,7 +404,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2017 quan Lee
+                2017 Quan Lee
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
@@ -501,6 +434,22 @@
     </div>
     
 <script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 1;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
 
 
 
