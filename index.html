@@ -82,9 +82,7 @@
 </script>
 
 
-    <script>
-        yiliaConfig.jquery_ui = [true, "//cdn.bootcss.com/jqueryui/1.10.4/jquery-ui.min.js", "//cdn.bootcss.com/jqueryui/1.10.4/css/jquery-ui.min.css"];
-    </script>
+    <script> yiliaConfig.jquery_ui = [false]; </script>
 
 
 
@@ -103,7 +101,7 @@
 <div class="intrude-less">
     <header id="header" class="inner">
         <a href="/" class="profilepic">
-            <img src="‪/img/avatar.jpg" class="animated zoomIn">
+            <img src="‪/img/avatar.png" class="animated zoomIn">
         </a>
         <hgroup>
           <h1 class="header-author"><a href="/">quan Lee</a></h1>
@@ -190,7 +188,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li></ul>
                     </div>
                 </section>
                 
@@ -226,7 +224,7 @@
     <div class="intrude-less">
         <header id="header" class="inner">
             <a href="/" class="profilepic">
-                <img src="‪/img/avatar.jpg" class="animated zoomIn">
+                <img src="‪/img/avatar.png" class="animated zoomIn">
             </a>
             <hgroup>
               <h1 class="header-author"><a href="/" title="回到主页">quan Lee</a></h1>
@@ -264,6 +262,143 @@
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
 </nav>
       <div class="body-wrap">
+  
+    <article id="post-java数据类型" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/08/05/java数据类型/" class="article-date">
+      <time datetime="2017-08-05T13:56:05.889Z" itemprop="datePublished">2017-08-05</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/05/java数据类型/">java数据类型</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">-2147483648~2147483647</td>
+</tr>
+<tr>
+<td>short</td>
+<td style="text-align:center">2字节</td>
+<td style="text-align:left">-32768~32767</td>
+</tr>
+<tr>
+<td>long</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">-9 223 372 036 854 775 808~-9 223 372 036 854 775 807</td>
+</tr>
+<tr>
+<td>byte</td>
+<td style="text-align:center">1字节</td>
+<td style="text-align:left">-128~127</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">大约±3.402 823 47E+38F(有效位数6~7位)</td>
+</tr>
+<tr>
+<td>double</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">大约±1.797 693 134 862 315 70E+308(有效位数15位)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h2><blockquote>
+<p>单个字符，通常用来表示字符常量</p>
+</blockquote>
+<hr>
+<h3 id="特殊的转义字符"><a href="#特殊的转义字符" class="headerlink" title="特殊的转义字符"></a>特殊的转义字符</h3><blockquote>
+<p><strong>\b 退格</strong>  <strong>\n 换行</strong><br><strong>\t 制表</strong>   <strong>\r 回车</strong></p>
+</blockquote>
+<hr>
+<h1 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h1><ul>
+<li>利用关键字<code>final</code>指示常量。</li>
+<li>关键字final表示这个这个变量只能被赋值一次。一旦被赋值以后就不能再更改。</li>
+<li>常量名使用全大写。</li>
+<li>要想某个常量在一个类中的多个方法中使用，通常将这些常量称为类常量，可以用<code>static final</code>设置一个常量值。</li>
+<li>类常量的定义位于<code>main</code>方法的外部，而且如果一个常量被声明为<code>public</code>，那么其他类的方法也可以使用这个常量</li>
+</ul>
+<hr>
+<h1 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h1><p>##三目运算符</p>
+<blockquote>
+<p>condition？expression1：expression2<br>当条件condition为真时计算第一个表达式，否则计算第二个表达式。</p>
+</blockquote>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/java学习笔记/">java学习笔记</a>
+    </div>
+
+
+      
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+    </div>
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
