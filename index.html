@@ -176,40 +176,10 @@
 <li>每个类可以有一个以上的构造器</li>
 <li>构造器可以有0个、1个或多个参数</li>
 <li>构造器没有返回值</li>
-<li>构造器总是伴随着new操作一起调用</li>
-</ul>
-<hr>
-<blockquote>
-<p>所有的java对象都是在堆中构造的。<br>不要再在构造器中定义与实例域重名的局部变量。例如<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> Employee(<span class="keyword">String</span> n,<span class="keyword">double</span> s...)&#123;</div><div class="line">    <span class="keyword">String</span> name = n <span class="comment">//Error</span></div><div class="line">    <span class="keyword">double</span> salary = s<span class="comment">//Error</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
-</blockquote>
-<hr>
-<blockquote>
-<p>所有的方法都必须在类的内部定义。</p>
-</blockquote>
-<hr>
-<h2 id="方法参数的使用情况"><a href="#方法参数的使用情况" class="headerlink" title="方法参数的使用情况"></a>方法参数的使用情况</h2><ul>
-<li>一个方法不能修改一个基本数据类型的参数(即数值型格布尔型)。</li>
-<li>一个方法可以改变一个对象参数的状态。</li>
-<li>一个方法不能让对象参数引用一个新的对象。</li>
-</ul>
-<hr>
-<h2 id="对象构造"><a href="#对象构造" class="headerlink" title="对象构造"></a>对象构造</h2><blockquote>
-<p>构造器如果没有被赋初值，那么就会被自动地赋为默认值：数值为o，布尔值为false、对象引用为null。</p>
-</blockquote>
-<hr>
-<h2 id="类设计技巧"><a href="#类设计技巧" class="headerlink" title="类设计技巧"></a>类设计技巧</h2><ul>
-<li>一定要保证数据。</li>
-<li>一定要对数据初始化。<ul>
-<li>java不对局部变量进行初始化，但是会对对象的实例域进行初始化。</li>
-<li>最好不要依赖于系统的默认值，而是应该显式地初始化所有数据。</li>
-</ul>
-</li>
-<li>不要在类中使用过多的基本类型。</li>
-<li>不是所有的域都需要独立的域访问器和与更改器。</li>
-<li>将职责过多的类进行分解。</li>
-<li>类名和方法名要能够体现他们的职责。</li>
-</ul>
-
+<li>构造器总是伴随着new操作一起调用
+        
+          <a class="article-more-a" href="/2017/08/13/对象与类/#more">more >></a>
+        
       
 
       
