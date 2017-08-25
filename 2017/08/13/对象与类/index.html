@@ -6,18 +6,18 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>对象与类 | QLee的博客</title>
+  <title>java学习笔记(2) | QLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="对象与类构造器 构造器与类同名 每个类可以有一个以上的构造器 构造器可以有0个、1个或多个参数 构造器没有返回值 构造器总是伴随着new操作一起调用">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
-<meta property="og:title" content="对象与类">
+<meta property="og:title" content="java学习笔记(2)">
 <meta property="og:url" content="http://yoursite.com/2017/08/13/对象与类/index.html">
 <meta property="og:site_name" content="QLee的博客">
 <meta property="og:description" content="对象与类构造器 构造器与类同名 每个类可以有一个以上的构造器 构造器可以有0个、1个或多个参数 构造器没有返回值 构造器总是伴随着new操作一起调用">
-<meta property="og:updated_time" content="2017-08-13T14:21:06.991Z">
+<meta property="og:updated_time" content="2017-08-22T08:44:38.396Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="对象与类">
+<meta name="twitter:title" content="java学习笔记(2)">
 <meta name="twitter:description" content="对象与类构造器 构造器与类同名 每个类可以有一个以上的构造器 构造器可以有0个、1个或多个参数 构造器没有返回值 构造器总是伴随着new操作一起调用">
   
   
@@ -157,7 +157,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      对象与类
+      java学习笔记(2)
     </h1>
   
 
@@ -180,11 +180,11 @@
 </ul>
 <hr>
 <blockquote>
-<p>所有的java对象都是在堆中构造的。<br>不要再在构造器中定义与实例域重名的局部变量。例如<br><figure class="highlight arduino"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">public</span> Employee(<span class="keyword">String</span> n,<span class="keyword">double</span> s...)&#123;</div><div class="line">    <span class="keyword">String</span> name = n <span class="comment">//Error</span></div><div class="line">    <span class="keyword">double</span> salary = s<span class="comment">//Error</span></div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>所有的java对象都是在堆中构造的。<br>不要再在构造器中定义与实例域重名的局部变量。例如<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&gt;</span><span class="bash"> public Employee(String n,double s...)&#123;</span></div><div class="line"><span class="meta">&gt;</span><span class="bash">    String name = n //Error</span></div><div class="line"><span class="meta">&gt;</span><span class="bash">    double salary = s//Error</span></div><div class="line"><span class="meta">&gt;</span><span class="bash"> &#125;</span></div><div class="line"><span class="meta">&gt;</span><span class="bash"></span></div></pre></td></tr></table></figure></p>
 </blockquote>
 <hr>
 <blockquote>
-<p>所有的方法都必须在类的内部定义。</p>
+<p><strong>所有的方法都必须在类的内部定义。</strong></p>
 </blockquote>
 <hr>
 <h2 id="方法参数的使用情况"><a href="#方法参数的使用情况" class="headerlink" title="方法参数的使用情况"></a>方法参数的使用情况</h2><ul>
@@ -291,6 +291,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2017/08/25/java学习笔记(3)/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          java学习笔记(3)
+        
+      </div>
+    </a>
   
   
     <a href="/2017/08/08/Shortcut/" id="article-nav-older" class="article-nav-link-wrap">
