@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>java学习笔记(3) | QLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。    super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+  <meta name="description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
 <meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="java学习笔记(3)">
 <meta property="og:url" content="http://yoursite.com/2017/08/25/java学习笔记(3)/index.html">
 <meta property="og:site_name" content="QLee的博客">
-<meta property="og:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。    super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+<meta property="og:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
 <meta property="og:image" content="http://incdn1.b0.upaiyun.com/2014/06/fbddd02451798ed512e142809d02bc0c.jpeg">
-<meta property="og:updated_time" content="2017-08-25T03:36:24.826Z">
+<meta property="og:updated_time" content="2017-08-25T06:10:08.023Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="java学习笔记(3)">
-<meta name="twitter:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。    super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+<meta name="twitter:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
 <meta name="twitter:image" content="http://incdn1.b0.upaiyun.com/2014/06/fbddd02451798ed512e142809d02bc0c.jpeg">
   
   
@@ -179,23 +179,28 @@
 <li>引用隐式参数</li>
 <li>调用该类其他的构造器。</li>
 </ol>
+</blockquote>
 <hr>
+<blockquote>
 <p> <code>super</code>关键字也有两个用途</p>
 <ol>
 <li>调用超类的方法</li>
-<li>调用超类的构造器<a id="more"></a>
-</li>
+<li>调用超类的构造器</li>
 </ol>
+</blockquote>
+ <a id="more"></a>
 <hr>
 <h2 id="动态绑定-调用对象方法执行过程）"><a href="#动态绑定-调用对象方法执行过程）" class="headerlink" title="动态绑定(调用对象方法执行过程）"></a>动态绑定(调用对象方法执行过程）</h2><ol>
 <li>编译器查看对象的声明类型和方法名。 </li>
 <li>接下来，编译器将查看调用方法是提供的参数类型。如果没有找到与参数类型匹配的方法，或者发现经过类型装换后有多个方法与之匹配，就会报告一个错误。</li>
-<li>至此，编译器疑已获得需要调用的方法名字和参数类型。<br>TIPS:方法的名字和参数列表称为方法的签名</li>
+<li>至此，编译器疑已获得需要调用的方法名字和参数类型。<blockquote>
+<p>TIPS:方法的名字和参数列表称为方法的签名</p>
+</blockquote>
+</li>
 <li>如果是<code>private</code>方法,<code>static</code>方法、<code>final</code>方法或者构造器，那么编译器将可以准确地知道应该调用哪种方法，这种称为静态绑定。</li>
 <li>当程序运行时，并且采用动态绑定调用方法时，虚拟机一定调用与x所引用对象的实际类型最合适的那个类的方法。</li>
 <li>每次调用方法都要进行搜索时间开销相当大，所以虚拟机会预先为每个类创建了一个方法表。 </li>
 </ol>
-</blockquote>
 <hr>
 <h2 id="阻止继承"><a href="#阻止继承" class="headerlink" title="阻止继承"></a>阻止继承</h2><blockquote>
 <p>将方法或类声明为<code>final</code>主要目的是：确保他们不会出现在子类中改变语义。</p>
