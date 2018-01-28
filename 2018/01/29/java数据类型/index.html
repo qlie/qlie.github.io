@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: IntelliJ IDEA | QLee的博客</title>
+  <title>java学习笔记(1) | QLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一粒沙里看世界,半瓣花上说人情">
-<meta name="keywords" content="嘻嘻嘻">
-<meta property="og:type" content="website">
-<meta property="og:title" content="QLee的博客">
-<meta property="og:url" content="http://yoursite.com/tags/IntelliJ-IDEA/index.html">
+  <meta name="description" content="整型   类型 存储需求 取值范围     int 4字节 -2147483648~2147483647   short 2字节 -32768~32767   long 8字节 -9 223 372 036 854 775 808~-9 223 372 036 854 775 807   byte 1字节 -128~127">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java学习笔记(1)">
+<meta property="og:url" content="http://yoursite.com/2018/01/29/java数据类型/index.html">
 <meta property="og:site_name" content="QLee的博客">
-<meta property="og:description" content="一粒沙里看世界,半瓣花上说人情">
+<meta property="og:description" content="整型   类型 存储需求 取值范围     int 4字节 -2147483648~2147483647   short 2字节 -32768~32767   long 8字节 -9 223 372 036 854 775 808~-9 223 372 036 854 775 807   byte 1字节 -128~127">
+<meta property="og:updated_time" content="2017-08-22T08:39:28.853Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QLee的博客">
-<meta name="twitter:description" content="一粒沙里看世界,半瓣花上说人情">
+<meta name="twitter:title" content="java学习笔记(1)">
+<meta name="twitter:description" content="整型   类型 存储需求 取值范围     int 4字节 -2147483648~2147483647   short 2字节 -32768~32767   long 8字节 -9 223 372 036 854 775 808~-9 223 372 036 854 775 807   byte 1字节 -128~127">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -149,60 +150,240 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-java数据类型" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/29/Shortcut/" class="archive-article-date">
-  	<time datetime="2018-01-28T19:12:01.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/29/Shortcut/">Shortcut</a>
+    <h1 class="article-title" itemprop="name">
+      java学习笔记(1)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/01/29/java数据类型/" class="archive-article-date">
+  	<time datetime="2018-01-28T19:12:01.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="整型"><a href="#整型" class="headerlink" title="整型"></a>整型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>int</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">-2147483648~2147483647</td>
+</tr>
+<tr>
+<td>short</td>
+<td style="text-align:center">2字节</td>
+<td style="text-align:left">-32768~32767</td>
+</tr>
+<tr>
+<td>long</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">-9 223 372 036 854 775 808~-9 223 372 036 854 775 807</td>
+</tr>
+<tr>
+<td>byte</td>
+<td style="text-align:center">1字节</td>
+<td style="text-align:left">-128~127</td>
+</tr>
+</tbody>
+</table>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h2><table>
+<thead>
+<tr>
+<th>类型</th>
+<th style="text-align:center">存储需求</th>
+<th style="text-align:left">取值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td style="text-align:center">4字节</td>
+<td style="text-align:left">大约±3.402 823 47E+38F(有效位数6~7位)</td>
+</tr>
+<tr>
+<td>double</td>
+<td style="text-align:center">8字节</td>
+<td style="text-align:left">大约±1.797 693 134 862 315 70E+308(有效位数15位)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="char类型"><a href="#char类型" class="headerlink" title="char类型"></a>char类型</h2><blockquote>
+<p>单个字符，通常用来表示字符常量</p>
+</blockquote>
+<hr>
+<h3 id="特殊的转义字符"><a href="#特殊的转义字符" class="headerlink" title="特殊的转义字符"></a>特殊的转义字符</h3><blockquote>
+<p><strong>\b 退格</strong>  <strong>\n 换行</strong><br><strong>\t 制表</strong>   <strong>\r 回车</strong></p>
+</blockquote>
+<hr>
+<h2 id="常量"><a href="#常量" class="headerlink" title="常量"></a>常量</h2><ul>
+<li>利用关键字<code>final</code>指示常量。</li>
+<li>关键字final表示这个这个变量只能被赋值一次。一旦被赋值以后就不能再更改。</li>
+<li>常量名使用全大写。</li>
+<li>要想某个常量在一个类中的多个方法中使用，通常将这些常量称为类常量，可以用<code>static final</code>设置一个常量值。</li>
+<li>类常量的定义位于<code>main</code>方法的外部，而且如果一个常量被声明为<code>public</code>，那么其他类的方法也可以使用这个常量</li>
+</ul>
+<hr>
+<h2 id="运算符"><a href="#运算符" class="headerlink" title="运算符"></a>运算符</h2><h3 id="三目运算符"><a href="#三目运算符" class="headerlink" title="三目运算符"></a>三目运算符</h3><blockquote>
+<p>condition？expression1：expression2<br>当条件condition为真时计算第一个表达式，否则计算第二个表达式。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">IntelliJ IDEA</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/01/29/java数据类型/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/01/29/Shortcut/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Shortcut
+        
+      </div>
+    </a>
   
   
-    </div></section>
+    <a href="/2018/01/29/对象与类/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">java学习笔记(2)</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  
 
 
           </div>
@@ -229,9 +410,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,

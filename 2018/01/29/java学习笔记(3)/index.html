@@ -6,18 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Tag: IntelliJ IDEA | QLee的博客</title>
+  <title>java学习笔记(3) | QLee的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一粒沙里看世界,半瓣花上说人情">
-<meta name="keywords" content="嘻嘻嘻">
-<meta property="og:type" content="website">
-<meta property="og:title" content="QLee的博客">
-<meta property="og:url" content="http://yoursite.com/tags/IntelliJ-IDEA/index.html">
+  <meta name="description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java学习笔记(3)">
+<meta property="og:url" content="http://yoursite.com/2018/01/29/java学习笔记(3)/index.html">
 <meta property="og:site_name" content="QLee的博客">
-<meta property="og:description" content="一粒沙里看世界,半瓣花上说人情">
+<meta property="og:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+<meta property="og:image" content="http://incdn1.b0.upaiyun.com/2014/06/fbddd02451798ed512e142809d02bc0c.jpeg">
+<meta property="og:updated_time" content="2017-08-25T06:10:08.024Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="QLee的博客">
-<meta name="twitter:description" content="一粒沙里看世界,半瓣花上说人情">
+<meta name="twitter:title" content="java学习笔记(3)">
+<meta name="twitter:description" content="继承  this关键字有两个用途  引用隐式参数 调用该类其他的构造器。      super关键字也有两个用途  调用超类的方法 调用超类的构造器">
+<meta name="twitter:image" content="http://incdn1.b0.upaiyun.com/2014/06/fbddd02451798ed512e142809d02bc0c.jpeg">
   
   
     <link rel="icon" href="/assets/img/favicon.ico">
@@ -149,60 +152,261 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-java学习笔记(3)" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/29/Shortcut/" class="archive-article-date">
-  	<time datetime="2018-01-28T19:12:01.308Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-29</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/29/Shortcut/">Shortcut</a>
+    <h1 class="article-title" itemprop="name">
+      java学习笔记(3)
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/01/29/java学习笔记(3)/" class="archive-article-date">
+  	<time datetime="2018-01-28T19:12:01.304Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-29</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h1><hr>
+<blockquote>
+<p><code>this</code>关键字有两个用途</p>
+<ol>
+<li>引用隐式参数</li>
+<li>调用该类其他的构造器。</li>
+</ol>
+</blockquote>
+<hr>
+<blockquote>
+<p> <code>super</code>关键字也有两个用途</p>
+<ol>
+<li>调用超类的方法</li>
+<li>调用超类的构造器</li>
+</ol>
+</blockquote>
+ <a id="more"></a>
+<hr>
+<h2 id="动态绑定-调用对象方法执行过程）"><a href="#动态绑定-调用对象方法执行过程）" class="headerlink" title="动态绑定(调用对象方法执行过程）"></a>动态绑定(调用对象方法执行过程）</h2><ol>
+<li>编译器查看对象的声明类型和方法名。 </li>
+<li>接下来，编译器将查看调用方法是提供的参数类型。如果没有找到与参数类型匹配的方法，或者发现经过类型装换后有多个方法与之匹配，就会报告一个错误。</li>
+<li>至此，编译器疑已获得需要调用的方法名字和参数类型。<blockquote>
+<p>TIPS:方法的名字和参数列表称为方法的签名</p>
+</blockquote>
+</li>
+<li>如果是<code>private</code>方法,<code>static</code>方法、<code>final</code>方法或者构造器，那么编译器将可以准确地知道应该调用哪种方法，这种称为静态绑定。</li>
+<li>当程序运行时，并且采用动态绑定调用方法时，虚拟机一定调用与x所引用对象的实际类型最合适的那个类的方法。</li>
+<li>每次调用方法都要进行搜索时间开销相当大，所以虚拟机会预先为每个类创建了一个方法表。 </li>
+</ol>
+<hr>
+<h2 id="阻止继承"><a href="#阻止继承" class="headerlink" title="阻止继承"></a>阻止继承</h2><blockquote>
+<p>将方法或类声明为<code>final</code>主要目的是：确保他们不会出现在子类中改变语义。</p>
+</blockquote>
+<hr>
+<h2 id="控制可见性的4个访问修饰符"><a href="#控制可见性的4个访问修饰符" class="headerlink" title="控制可见性的4个访问修饰符"></a>控制可见性的4个访问修饰符</h2><ul>
+<li>仅对本类可见———private</li>
+<li>对所有类可见———public</li>
+<li>对本包和所有子类可见——protected</li>
+<li>对本包可见——默认，不需要修饰符</li>
+</ul>
+<hr>
+<h2 id="反射"><a href="#反射" class="headerlink" title="反射"></a>反射</h2><h3 id="反射机制作用："><a href="#反射机制作用：" class="headerlink" title="反射机制作用："></a>反射机制作用：</h3><ul>
+<li>在运行中分析类的能力</li>
+</ul>
+<ul>
+<li>在运行中查看对象，例如，编写一个tostring的方法供所有类使用</li>
+<li>实现通用的数组操作代码。</li>
+<li>利用Method对象</li>
+</ul>
+<p>未完待续。。<br>参考链接：<br><a href="http://tengj.top/2016/04/28/javareflect/#" target="_blank" rel="external">Java基础与提高干货系列——Java反射机制</a><br><a href="http://www.sczyh30.com/posts/Java/java-reflection-1/#%E4%B8%80%E3%80%81%E5%9B%9E%E9%A1%BE%EF%BC%9A%E4%BB%80%E4%B9%88%E6%98%AF%E5%8F%8D%E5%B0%84%EF%BC%9F" target="_blank" rel="external">深入解析Java反射（1） - 基础</a></p>
+<hr>
+<h1 id="接口与内部类"><a href="#接口与内部类" class="headerlink" title="接口与内部类"></a>接口与内部类</h1><p>标签（空格分隔）： java学习笔记</p>
+<hr>
+<h2 id="接口"><a href="#接口" class="headerlink" title="接口"></a>接口</h2><ul>
+<li>接口绝不能含有实例域，也不能在接口中实现方法。</li>
+<li>提供实例域和方法实现的任务应该由实现接口的那个类来完成。</li>
+</ul>
+<hr>
+<p>让类实现接口的步骤<em>p216</em>：</p>
+<ul>
+<li>将类声明为实现给定的接口</li>
+<li>对接口中的所有方法进行定义</li>
+</ul>
+<hr>
+<blockquote>
+<p>每个类可以实现多个接口</p>
+</blockquote>
+<hr>
+<h1 id="异常、断言、日志和调试"><a href="#异常、断言、日志和调试" class="headerlink" title="异常、断言、日志和调试"></a>异常、断言、日志和调试</h1><p>标签（空格分隔）： java学习笔记</p>
+<hr>
+<h2 id="异常分类"><a href="#异常分类" class="headerlink" title="异常分类"></a>异常分类</h2><p>java异常层次结构<br><img src="http://incdn1.b0.upaiyun.com/2014/06/fbddd02451798ed512e142809d02bc0c.jpeg" alt="java异常层次结构"></p>
+<blockquote>
+<p>所有的异常都是从Throwable继承而来</p>
+</blockquote>
+<hr>
+<h3 id="派生于Runtime-Exception的异常通常包涵下面几种情况"><a href="#派生于Runtime-Exception的异常通常包涵下面几种情况" class="headerlink" title="派生于Runtime  Exception的异常通常包涵下面几种情况"></a>派生于Runtime  Exception的异常通常包涵下面几种情况</h3><ul>
+<li>错误的类型转换</li>
+<li>数组访问越界</li>
+<li>访问空指针等<br>太多了，看书。。。</li>
+</ul>
+<hr>
+<h1 id="泛型"><a href="#泛型" class="headerlink" title="泛型"></a>泛型</h1><blockquote>
+<p>泛型很像C++中的模板。</p>
+</blockquote>
+<h2 id="局限性p539"><a href="#局限性p539" class="headerlink" title="局限性p539"></a>局限性<code>p539</code></h2><ul>
+<li>不能用基本类型实例化类型参数</li>
+<li>运行时类型查询只适用于原始类型</li>
+<li>不能创建参数化类型的数组</li>
+<li>Varargs警告<code>p540</code><ul>
+<li>java不支持泛型类型的数组</li>
+</ul>
+</li>
+<li>不能实例化类型变量</li>
+<li>泛型类的静态上下文中类型变量无效（原文：Type Variables Are Not Valid in Static Contexts of Generic Classes）</li>
+<li>不能抛出或捕获泛型类的实例</li>
+<li>注意擦除后的冲突</li>
+</ul>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">IntelliJ IDEA</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">java</a>
         		</li>
       		
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2018/01/29/java学习笔记(3)/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+    <a href="/2018/01/29/对象与类/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          java学习笔记(2)
+        
+      </div>
+    </a>
   
   
-    </div></section>
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+  
+  
   
 
-    
+  
+
+  
+    <section id="comments">
+      <div id="disqus_thread"></div>
+        <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'true'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </section>
+  
 
 
           </div>
@@ -229,9 +433,9 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
+		isPost: true,
 		isArchive: false,
-		isTag: true,
+		isTag: false,
 		isCategory: false,
 		open_in_new: true,
 		toc_hide_index: true,
